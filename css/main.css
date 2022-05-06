@@ -1,4 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +9,7 @@
 .home-bgImg-container {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg");
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/sass.png");
   background-position: center center;
   background-size: cover;
 }
@@ -20,12 +21,14 @@
   justify-content: center;
   text-align: center;
 }
+
 .home__name {
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #fff;
 }
+
 .home__name--last {
   color: red;
   font-weight: 700;
@@ -34,20 +37,23 @@
 .about-bgImg-container {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg");
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/sass.png");
   background-position: center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .about-bgImg-container .about__bio-image {
   text-align: center;
 }
+
 .about-bgImg-container .about__bio-image h2 {
   font-size: 3rem;
   color: #ff652f;
 }
+
 .about-bgImg-container .about__bio-image p {
   font-size: 1.2rem;
   margin: 2rem;
@@ -57,16 +63,19 @@
   width: 70vw;
   margin: 2rem auto;
 }
+
 .about .about__job {
   margin: 1rem;
   background: #414141;
   padding: 1rem;
   border-bottom: 5px solid #ff652f;
 }
+
 .about .about__job h2,
 .about .about__job h3 {
   margin: 0.5rem 0;
 }
+
 .about .about__job h6 {
   margin: 0.3rem 0;
 }
@@ -74,13 +83,14 @@
 .project-bgImg-container {
   height: 40vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg");
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/sass.png");
   background-position: center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .project-bgImg-container .projects__bio-image {
   margin-bottom: 0.5rem;
   text-align: center;
@@ -94,15 +104,18 @@
   padding: 2rem 5rem;
   gap: 1rem 0rem;
 }
+
 .projects__item {
   width: 100%;
   border-bottom: 5px solid #ff652f;
   cursor: pointer;
   position: relative;
 }
+
 .projects__item img {
   width: 100%;
 }
+
 .projects__item::after {
   content: "";
   position: absolute;
@@ -113,6 +126,7 @@
   opacity: 0;
   transition: all 1s;
 }
+
 .projects__item:hover::after {
   opacity: 0.7;
 }
@@ -120,10 +134,11 @@
 .contact-bgImg-container {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg");
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/sass.png");
   background-position: center center;
   background-size: cover;
 }
+
 .contact-bgImg-container nav {
   height: 40vh;
 }
@@ -135,10 +150,12 @@
   justify-content: center;
   text-align: center;
 }
+
 .contact h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
+
 .contact__list {
   display: flex;
   flex-direction: column;
@@ -148,6 +165,7 @@
   gap: 2.5rem 2rem;
   font-size: 1.5rem;
 }
+
 .contact .text-secondary {
   color: #ff652f;
 }
@@ -156,31 +174,43 @@
   padding: 1rem;
   height: 10vh;
 }
+
 .nav__list {
   text-align: right;
 }
+
 .nav__item {
   display: inline;
   padding-right: 1rem;
 }
+
 .nav__link {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
   transition: all 1s;
 }
+
 .nav__link:hover {
   color: blue;
 }
+
 .nav__link--active {
   color: #ff652f;
 }
 
-.link-style a, footer.middle a, footer.vertical .social-icons a, footer.horizontal a {
+.link-style a,
+footer.middle a,
+footer.vertical .social-icons a,
+footer.horizontal a {
   padding: 0.4rem;
   transition: all 1s;
 }
-.link-style a:hover, footer.middle a:hover, footer.vertical .social-icons a:hover, footer.horizontal a:hover {
+
+.link-style a:hover,
+footer.middle a:hover,
+footer.vertical .social-icons a:hover,
+footer.horizontal a:hover {
   color: #ff652f;
 }
 
@@ -199,12 +229,14 @@ footer.vertical {
   padding: 2rem;
   margin-bottom: 1rem;
 }
+
 footer.vertical .social-icons {
   display: flex;
   flex-direction: column;
   position: fixed;
   bottom: 1rem;
 }
+
 footer.vertical .copyright {
   position: fixed;
   bottom: 1rem;
@@ -226,12 +258,15 @@ footer.middle {
   .nav {
     padding: 0.5rem;
   }
+
   .nav__list {
     text-align: center;
   }
+
   .nav__item {
     padding-right: 0.7rem;
   }
+
   .nav .nav__link {
     font-size: 0.9rem;
   }
@@ -240,21 +275,26 @@ footer.middle {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
+
   .contact__list {
     gap: 2rem 1.2rem;
     font-size: 1.2rem;
   }
 }
+
 @media screen and (min-width: 576px) {
   .nav {
     padding: 0.7rem;
   }
+
   .nav__list {
     text-align: right;
   }
+
   .nav__item {
     padding-right: 1rem;
   }
+
   .nav .nav__link {
     font-size: 1rem;
   }
@@ -263,15 +303,18 @@ footer.middle {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
   }
+
   .contact__list {
     gap: 2.5rem 2rem;
     font-size: 1.5rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .nav__item {
     padding-right: 1.3rem;
   }
+
   .nav .nav__link {
     font-size: 1.3rem;
   }
@@ -280,10 +323,12 @@ footer.middle {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .nav__item {
     padding-right: 1.5rem;
   }
+
   .nav .nav__link {
     font-size: 1.5rem;
   }
@@ -296,11 +341,13 @@ footer.middle {
     flex-direction: row;
   }
 }
+
 @media screen and (min-width: 1600px) {
   .projects__item {
     width: 33%;
   }
 }
+
 body {
   font-family: "Segoe UI", "Nunito", Tahoma, Genava, Verdana, sans-serif;
   line-height: 1;
